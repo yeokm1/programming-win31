@@ -1,0 +1,5 @@
+/*-----------------------------
+   MFRESORC.RC resource script
+  -----------------------------*/
+
+MyLogo METAFILE "mylogo.wmf"

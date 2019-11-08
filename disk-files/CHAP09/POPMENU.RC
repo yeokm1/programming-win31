@@ -1,0 +1,43 @@
+/*----------------------------
+   POPMENU.RC resource script
+  ----------------------------*/
+
+#include "popmenu.h"
+
+PopMenu MENU
+     {
+     POPUP ""
+          {
+          POPUP "&File"
+               {
+               MENUITEM "&New",               IDM_NEW
+               MENUITEM "&Open...",           IDM_OPEN
+               MENUITEM "&Save",              IDM_SAVE
+               MENUITEM "Save &As...",        IDM_SAVEAS
+               MENUITEM SEPARATOR
+               MENUITEM "E&xit",              IDM_EXIT
+               }
+          POPUP "&Edit"
+               {
+               MENUITEM "&Undo",              IDM_UNDO
+               MENUITEM SEPARATOR
+               MENUITEM "Cu&t",               IDM_CUT
+               MENUITEM "&Copy",              IDM_COPY
+               MENUITEM "&Paste",             IDM_PASTE
+               MENUITEM "De&lete",            IDM_DEL
+               }
+          POPUP "&Background"
+               {
+               MENUITEM "&White",             IDM_WHITE, CHECKED
+               MENUITEM "&Lt Gray",           IDM_LTGRAY
+               MENUITEM "&Gray",              IDM_GRAY
+               MENUITEM "&Dk Gray",           IDM_DKGRAY
+               MENUITEM "&Black",             IDM_BLACK
+               }
+          POPUP "&Help"
+               {
+               MENUITEM "&Help...",           IDM_HELP
+               MENUITEM "&About PopMenu...",  IDM_ABOUT
+               }
+          }
+     }

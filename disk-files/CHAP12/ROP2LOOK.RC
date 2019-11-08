@@ -1,0 +1,26 @@
+/*-----------------------------
+   ROP2LOOK.RC resource script
+  -----------------------------*/
+
+Rop2Look MENU
+     {
+     POPUP "&Drawing Mode"
+          {
+          MENUITEM "0\tR2_BLACK",        1
+          MENUITEM "1\tR2_NOTMERGEPEN",  2
+          MENUITEM "2\tR2_MASKNOTPEN",   3
+          MENUITEM "3\tR2_NOTCOPYPEN",   4
+          MENUITEM "4\tR2_MASKPENNOT",   5
+          MENUITEM "5\tR2_NOT",          6
+          MENUITEM "6\tR2_XORPEN",       7
+          MENUITEM "7\tR2_NOTMASKPEN",   8
+          MENUITEM "8\tR2_MASKPEN",      9
+          MENUITEM "9\tR2_NOTXORPEN",   10
+          MENUITEM "A\tR2_NOP",         11
+          MENUITEM "B\tR2_MERGENOTPEN", 12
+          MENUITEM "C\tR2_COPYPEN",     13, CHECKED
+          MENUITEM "D\tR2_MERGEPENNOT", 14
+          MENUITEM "E\tR2_MERGEPEN",    15
+          MENUITEM "F\tR2_WHITE",       16
+          }
+     }

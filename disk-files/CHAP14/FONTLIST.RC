@@ -1,0 +1,16 @@
+/*-----------------------------
+   FONTLIST.RC resource script
+  -----------------------------*/
+
+#include "fontlist.h"
+
+FontList MENU
+     {
+     POPUP "&Device"
+          {
+          MENUITEM "&Screen",  IDM_SCREEN, CHECKED
+          MENUITEM "&Printer", IDM_PRINTER
+          MENUITEM SEPARATOR
+          MENUITEM "E&xit",    IDM_EXIT
+          }
+     }

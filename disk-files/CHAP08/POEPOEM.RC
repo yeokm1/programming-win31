@@ -1,0 +1,15 @@
+/*----------------------------
+   POEPOEM.RC resource script
+  ----------------------------*/
+
+#include "poepoem.h"
+
+poepoem     ICON  poepoem.ico
+AnnabelLee  TEXT  poepoem.asc
+
+STRINGTABLE
+     {
+     IDS_APPNAME, "poepoem"
+     IDS_CAPTION, """Annabel Lee"" by Edgar Allen Poe"
+     IDS_POEMRES, "AnnabelLee"
+     }

@@ -1,0 +1,10 @@
+;-----------------------------------
+; BITLIB.DEF module definition file
+;-----------------------------------
+
+LIBRARY        BITLIB
+
+DESCRIPTION    'Bitmap DLL for SHOWBIT.EXE'
+EXETYPE        WINDOWS
+CODE           PRELOAD MOVEABLE DISCARDABLE
+DATA           PRELOAD MOVEABLE SINGLE

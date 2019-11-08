@@ -1,0 +1,69 @@
+/*----------------------------
+   MDIDEMO.RC resource script
+  ----------------------------*/
+
+#include <windows.h>
+#include "mdidemo.h"
+
+MdiMenuInit MENU
+     {
+     POPUP "&File"
+          {
+          MENUITEM "New &Hello",             IDM_NEWHELLO
+          MENUITEM "New &Rectangles",        IDM_NEWRECT
+          MENUITEM SEPARATOR
+          MENUITEM "E&xit",                  IDM_EXIT
+          }
+     }
+
+MdiMenuHello MENU
+     {
+     POPUP "&File"
+          {
+          MENUITEM "New &Hello",             IDM_NEWHELLO
+          MENUITEM "New &Rectangles",        IDM_NEWRECT
+          MENUITEM "&Close",                 IDM_CLOSE
+          MENUITEM SEPARATOR
+          MENUITEM "E&xit",                  IDM_EXIT
+          }
+     POPUP "&Color"
+          {
+          MENUITEM "&Black",                 IDM_BLACK
+          MENUITEM "&Red",                   IDM_RED
+          MENUITEM "&Green",                 IDM_GREEN
+          MENUITEM "B&lue",                  IDM_BLUE
+          MENUITEM "&White",                 IDM_WHITE
+          }
+     POPUP "&Window"
+          {
+          MENUITEM "&Cascade\tShift+F5",     IDM_CASCADE
+          MENUITEM "&Tile\tShift+F4",        IDM_TILE
+          MENUITEM "Arrange &Icons",         IDM_ARRANGE
+          MENUITEM "Close &All",             IDM_CLOSEALL
+          }
+     }
+
+MdiMenuRect MENU
+     {
+     POPUP "&File"
+          {
+          MENUITEM "New &Hello",             IDM_NEWHELLO
+          MENUITEM "New &Rectangles",        IDM_NEWRECT
+          MENUITEM "&Close",                 IDM_CLOSE
+          MENUITEM SEPARATOR
+          MENUITEM "E&xit",                  IDM_EXIT
+          }
+     POPUP "&Window"
+          {
+          MENUITEM "&Cascade\tShift+F5",     IDM_CASCADE
+          MENUITEM "&Tile\tShift+F4",        IDM_TILE
+          MENUITEM "Arrange &Icons",         IDM_ARRANGE
+          MENUITEM "Close &All",             IDM_CLOSEALL
+          }
+     }
+
+MdiAccel ACCELERATORS
+     {
+     VK_F5, IDM_CASCADE, VIRTKEY, SHIFT
+     VK_F4, IDM_TILE,    VIRTKEY, SHIFT
+     }

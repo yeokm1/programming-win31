@@ -1,0 +1,28 @@
+/*---------------------------
+   ABOUT3.RC resource script
+  ---------------------------*/
+
+#include <windows.h>
+#include "about3.h"
+
+about3 ICON about3.ico
+
+About3 MENU
+     {
+     POPUP "&Help"
+          {
+          MENUITEM "&About About3...",       IDM_ABOUT
+          }
+     }
+
+#define TABGRP (WS_TABSTOP | WS_GROUP)
+
+AboutBox DIALOG  20, 20, 160, 80
+     STYLE WS_POPUP | WS_DLGFRAME
+     {
+     CTEXT   "About3"                         -1,  0, 12, 160,  8
+     ICON    "About3"                         -1,  8,  8,   0,  0
+     CTEXT   "About Box Demo Program"         -1,  0, 36, 160,  8
+     CTEXT   "(c) Charles Petzold, 1992"      -1,  0, 48, 160,  8
+     CONTROL "OK" IDOK, "EllipPush",   TABGRP,    64, 60,  32, 14
+     } 

@@ -1,0 +1,11 @@
+;-----------------------------------
+; STRLIB.DEF module definition file
+;-----------------------------------
+
+LIBRARY        STRLIB
+
+DESCRIPTION    'DLL for STRPROG Program (c) Charles Petzold, 1992'
+EXETYPE        WINDOWS
+CODE           PRELOAD MOVEABLE DISCARDABLE
+DATA           PRELOAD MOVEABLE SINGLE
+HEAPSIZE       1024

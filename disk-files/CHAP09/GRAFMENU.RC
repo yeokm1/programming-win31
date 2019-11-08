@@ -1,0 +1,28 @@
+/*-----------------------------
+   GRAFMENU.RC resource script
+  -----------------------------*/
+
+#include "grafmenu.h"
+
+BitmapEdit BITMAP editlabl.bmp
+BitmapFile BITMAP filelabl.bmp
+BitmapFont BITMAP fontlabl.bmp
+BitmapHelp BITMAP bighelp.bmp
+
+MenuFile MENU
+     {
+     MENUITEM "&New",        IDM_NEW
+     MENUITEM "&Open...",    IDM_OPEN
+     MENUITEM "&Save",       IDM_SAVE
+     MENUITEM "Save &As...", IDM_SAVEAS
+     }
+
+MenuEdit MENU
+     {
+     MENUITEM "&Undo",       IDM_UNDO
+     MENUITEM SEPARATOR
+     MENUITEM "Cu&t",        IDM_CUT
+     MENUITEM "&Copy",       IDM_COPY
+     MENUITEM "&Paste",      IDM_PASTE
+     MENUITEM "De&lete",     IDM_DEL
+     }

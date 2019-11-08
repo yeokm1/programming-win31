@@ -1,0 +1,13 @@
+;-------------------------------------
+; POORMENU.DEF module definition file
+;-------------------------------------
+
+NAME           POORMENU
+
+DESCRIPTION    'The Poor-Persons Menu (c) Charles Petzold, 1992'
+EXETYPE        WINDOWS
+STUB           'WINSTUB.EXE'
+CODE           PRELOAD MOVEABLE DISCARDABLE
+DATA           PRELOAD MOVEABLE MULTIPLE
+HEAPSIZE       1024
+STACKSIZE      8192

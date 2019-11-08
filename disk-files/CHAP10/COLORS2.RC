@@ -1,0 +1,22 @@
+/*----------------------------
+   COLORS2.RC resource script
+  ----------------------------*/
+
+#include <windows.h>
+
+#define SBS_VERT_TAB (SBS_VERT | WS_TABSTOP)
+
+ColorScrDlg DIALOG  8, 16, 124, 132
+     STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_VISIBLE 
+     CAPTION "Color Scroll Scrollbars"
+     {
+     CONTROL "&Red",   -1, "static",    SS_CENTER,    10,   4, 24,   8
+     CONTROL "",       10, "scrollbar", SBS_VERT_TAB, 10,  16, 24, 100
+     CONTROL "0",      13, "static",    SS_CENTER,    10, 120, 24,   8
+     CONTROL "&Green", -1, "static",    SS_CENTER,    50,   4, 24,   8
+     CONTROL "",       11, "scrollbar", SBS_VERT_TAB, 50,  16, 24, 100
+     CONTROL "0",      14, "static",    SS_CENTER,    50, 120, 24,   8
+     CONTROL "&Blue",  -1, "static",    SS_CENTER,    90,   4, 24,   8
+     CONTROL "",       12, "scrollbar", SBS_VERT_TAB, 90,  16, 24, 100
+     CONTROL "0",      15, "static",    SS_CENTER,    90, 120, 24,   8
+     }

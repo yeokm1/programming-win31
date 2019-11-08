@@ -1,0 +1,41 @@
+/*---------------------------
+   ABOUT2.RC resource script
+  ---------------------------*/
+
+#include <windows.h>
+#include "about2.h"
+
+about2 ICON about2.ico
+
+About2 MENU
+     {
+     POPUP "&Help"
+          {
+          MENUITEM "&About About2...",       IDM_ABOUT
+          }
+     }
+
+#define TABGRP (WS_TABSTOP | WS_GROUP)
+
+AboutBox DIALOG 20, 20, 140, 188
+     STYLE WS_POPUP | WS_DLGFRAME
+     {
+     CTEXT       "About2"       -1,           0,  12, 140,   8
+     ICON        "About2"       -1,           8,   8,   0,   0
+     CTEXT       "About Box Demo Program" -1, 4,  36, 130,   8
+     CTEXT       ""             IDD_PAINT,   68,  54,  60,  60
+     GROUPBOX    "&Color"       -1,           4,  50,  54, 112
+     RADIOBUTTON "&Black"       IDD_BLACK,    8,  60,  40,  12, TABGRP
+     RADIOBUTTON "B&lue"        IDD_BLUE,     8,  72,  40,  12
+     RADIOBUTTON "&Green"       IDD_GREEN,    8,  84,  40,  12
+     RADIOBUTTON "Cya&n"        IDD_CYAN,     8,  96,  40,  12
+     RADIOBUTTON "&Red"         IDD_RED,      8, 108,  40,  12
+     RADIOBUTTON "&Magenta"     IDD_MAGENTA,  8, 120,  40,  12
+     RADIOBUTTON "&Yellow"      IDD_YELLOW,   8, 132,  40,  12
+     RADIOBUTTON "&White"       IDD_WHITE,    8, 144,  40,  12
+     GROUPBOX    "&Figure"      -1,          68, 120,  60,  40, WS_GROUP
+     RADIOBUTTON "Rec&tangle"   IDD_RECT,    72, 134,  50,  12, TABGRP
+     RADIOBUTTON "&Ellipse"     IDD_ELL,     72, 146,  50,  12
+     DEFPUSHBUTTON "OK"         IDOK,        20, 168,  40,  14, WS_GROUP
+     PUSHBUTTON  "Cancel"       IDCANCEL,    80, 168,  40,  14, WS_GROUP
+     }

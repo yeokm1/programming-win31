@@ -1,0 +1,15 @@
+/*-------------------------
+   ARCS.RC resource script
+  -------------------------*/
+
+#include "arcs.h"
+
+Arcs MENU
+     {
+     POPUP "&Options"
+          {
+          MENUITEM "&Arc",    IDM_ARC,  CHECKED
+          MENUITEM "&Chord",  IDM_CHORD
+          MENUITEM "&Pie",    IDM_PIE
+          }
+     }

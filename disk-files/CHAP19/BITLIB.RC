@@ -1,0 +1,13 @@
+/*---------------------------
+   BITLIB.RC resource script
+  ---------------------------*/
+
+1 BITMAP bitmap1.bmp
+2 BITMAP bitmap2.bmp
+3 BITMAP bitmap3.bmp
+4 BITMAP bitmap4.bmp
+5 BITMAP bitmap5.bmp
+6 BITMAP bitmap6.bmp
+7 BITMAP bitmap7.bmp
+8 BITMAP bitmap8.bmp
+9 BITMAP bitmap9.bmp

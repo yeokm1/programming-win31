@@ -1,0 +1,30 @@
+/*----------------------------
+   STRPROG.RC resource script
+  ----------------------------*/
+
+#include <windows.h>
+#include "strprog.h"
+
+StrProg MENU
+     {
+     MENUITEM  "&Enter!",  IDM_ENTER
+     MENUITEM  "&Delete!", IDM_DELETE
+     }
+
+EnterDlg DIALOG 24, 24, 190, 44
+     STYLE WS_POPUP | WS_DLGFRAME
+     {
+     LTEXT          "&Enter:",  0,            4,  8,  24,  8
+     EDITTEXT                   IDD_STRING,  32,  6, 154, 12
+     DEFPUSHBUTTON  "Ok",       IDOK,        44, 24,  32, 14
+     PUSHBUTTON     "Cancel",   IDCANCEL,   114, 24,  32, 14
+     }
+
+DeleteDlg DIALOG 24, 24, 190, 44
+     STYLE WS_POPUP | WS_DLGFRAME
+     {
+     LTEXT          "&Delete:", 0,            4,  8,  28,  8
+     EDITTEXT                   IDD_STRING,  36,  6, 150, 12
+     DEFPUSHBUTTON  "Ok",       IDOK,        44, 24,  32, 14
+     PUSHBUTTON     "Cancel",   IDCANCEL,   114, 24,  32, 14
+     }

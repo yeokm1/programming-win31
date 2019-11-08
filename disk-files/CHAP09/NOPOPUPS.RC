@@ -1,0 +1,33 @@
+/*-----------------------------
+   NOPOPUPS.RC resource script
+  -----------------------------*/
+
+#include "nopopups.h"
+
+MenuMain MENU
+     {
+     MENUITEM "MAIN:",         0,        INACTIVE
+     MENUITEM "&File...",      IDM_FILE
+     MENUITEM "&Edit...",      IDM_EDIT
+     }
+
+MenuFile MENU
+     {
+     MENUITEM "FILE:",         0,        INACTIVE
+     MENUITEM "&New",          IDM_NEW
+     MENUITEM "&Open...",      IDM_OPEN
+     MENUITEM "&Save",         IDM_SAVE
+     MENUITEM "Save &As...",   IDM_SAVEAS
+     MENUITEM "(&Main)",       IDM_MAIN
+     }
+
+MenuEdit MENU
+     {
+     MENUITEM "EDIT:",         0,        INACTIVE
+     MENUITEM "&Undo",         IDM_UNDO
+     MENUITEM "Cu&t",          IDM_CUT
+     MENUITEM "&Copy",         IDM_COPY
+     MENUITEM "&Paste",        IDM_PASTE
+     MENUITEM "De&lete",       IDM_DEL
+     MENUITEM "(&Main)",       IDM_MAIN
+     }

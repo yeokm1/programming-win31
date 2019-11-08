@@ -1,0 +1,48 @@
+/*------------------------
+   PICKFONT.H header file
+  ------------------------*/
+
+#define IDD_OK        1
+#define IDD_HEIGHT    10
+#define IDD_WIDTH     11
+#define IDD_WEIGHT    12
+#define IDD_ITALIC    13
+#define IDD_UNDER     14
+#define IDD_STRIKE    15
+#define IDD_ASPECT    16
+#define IDD_TEXT      17
+#define IDD_LOMET     18
+#define IDD_HIMET     19
+#define IDD_LOENG     20
+#define IDD_HIENG     21
+#define IDD_TWIPS     22
+#define IDD_LTWPS     23
+#define IDD_ANSI      24
+#define IDD_SYMBOL    25
+#define IDD_SHIFT     26
+#define IDD_OEM       27
+#define IDD_PDEF      28
+#define IDD_PFIXED    29
+#define IDD_PVAR      30
+#define IDD_DONT      31
+#define IDD_ROMAN     32
+#define IDD_SWISS     33
+#define IDD_MODERN    34
+#define IDD_SCRIPT    35
+#define IDD_DEC       36
+#define IDD_FACE      37
+#define TM_HEIGHT     38
+#define TM_ASCENT     39
+#define TM_DESCENT    40
+#define TM_INTLEAD    41
+#define TM_EXTLEAD    42
+#define TM_AVEWIDTH   43
+#define TM_MAXWIDTH   44
+#define TM_WEIGHT     45
+#define TM_PITCH      46
+#define TM_FAMILY     47
+#define TM_CHARSET    48
+#define TM_OVER       49
+#define TM_DIGX       50
+#define TM_DIGY       51
+#define TF_NAME       52

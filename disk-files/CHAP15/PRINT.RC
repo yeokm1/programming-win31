@@ -1,0 +1,12 @@
+/*--------------------------
+   PRINT.RC resource script
+  --------------------------*/
+
+#include <windows.h>
+
+PrintDlgBox DIALOG 40, 40, 120, 40
+     STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_VISIBLE
+     {
+     CTEXT          "Cancel Printing", -1,  4,  6, 120, 12
+     DEFPUSHBUTTON  "Cancel",    IDCANCEL, 44, 22,  32, 14, WS_GROUP
+     }

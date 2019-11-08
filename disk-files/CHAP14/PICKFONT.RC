@@ -1,0 +1,85 @@
+/*-----------------------------
+   PICKFONT.RC resource script
+  -----------------------------*/
+
+#include <windows.h>
+#include "pickfont.h"
+
+#define GT (WS_GROUP | WS_TABSTOP)
+#define GR (WS_GROUP)
+#define TA (WS_TABSTOP)
+#define AS (ES_AUTOHSCROLL)
+
+PickFont DIALOG 0, 0, 320, 170
+     STYLE WS_CHILD | WS_BORDER | WS_VISIBLE | DS_ABSALIGN
+     {
+     LTEXT         "&Height"          -1,            6,   8,  30,   8
+     EDITTEXT                         IDD_HEIGHT,   36,   6,  30,  12
+     LTEXT         "&Width"           -1,            6,  24,  30,   8
+     EDITTEXT                         IDD_WIDTH,    36,  22,  30,  12
+     LTEXT         "Weigh&t"          -1,            6,  40,  30,   8
+     EDITTEXT                         IDD_WEIGHT,   36,  38,  30,  12
+     GROUPBOX      "&Mapping Mode"    -1,           70,   2, 116,  60
+     RADIOBUTTON   "Text"             IDD_TEXT,     74,  12,  50,  12, GT
+     RADIOBUTTON   "Lo Metric"        IDD_LOMET,    74,  24,  50,  12
+     RADIOBUTTON   "Hi Metric"        IDD_HIMET,    74,  36,  50,  12
+     RADIOBUTTON   "Lo English"       IDD_LOENG,   130,  12,  54,  12
+     RADIOBUTTON   "Hi English"       IDD_HIENG,   130,  24,  52,  12
+     RADIOBUTTON   "Twips"            IDD_TWIPS,   130,  36,  52,  12
+     RADIOBUTTON   "'Logical Twips'", IDD_LTWPS,    74,  48,  80,  12
+     CHECKBOX      "Match &Aspect"    IDD_ASPECT,    6,  52,  60,  12, GT
+     CHECKBOX      "&Italic"          IDD_ITALIC,    6,  64,  60,  12, GT
+     CHECKBOX      "&Underline"       IDD_UNDER,     6,  76,  60,  12, GT
+     CHECKBOX      "&Strike-Out"      IDD_STRIKE,    6,  88,  60,  12, GT
+     GROUPBOX      "&Pitch"           -1,            4, 102,  58,  48, GR
+     RADIOBUTTON   "Default"          IDD_PDEF,      8, 112,  50,  12, GT
+     RADIOBUTTON   "Fixed"            IDD_PFIXED,    8, 124,  50,  12
+     RADIOBUTTON   "Variable"         IDD_PVAR,      8, 136,  50,  12
+     GROUPBOX      "&Char Set"        -1,           66,  90,  58,  60, GR
+     RADIOBUTTON   "ANSI"             IDD_ANSI,     70, 100,  50,  12, GT
+     RADIOBUTTON   "Symbol"           IDD_SYMBOL,   70, 112,  50,  12
+     RADIOBUTTON   "Shift JIS"        IDD_SHIFT,    70, 124,  50,  12
+     RADIOBUTTON   "OEM"              IDD_OEM,      70, 136,  50,  12
+
+     GROUPBOX      "&Family"          -1,          128,  66,  58,  84, GR
+     RADIOBUTTON   "Don't Care"       IDD_DONT,    132,  76,  50,  12, GT
+     RADIOBUTTON   "Roman"            IDD_ROMAN,   132,  88,  50,  12
+     RADIOBUTTON   "Swiss"            IDD_SWISS,   132, 100,  50,  12
+     RADIOBUTTON   "Modern"           IDD_MODERN,  132, 112,  50,  12
+     RADIOBUTTON   "Script"           IDD_SCRIPT,  132, 124,  50,  12
+     RADIOBUTTON   "Decorative"       IDD_DEC,     132, 136,  50,  12
+     LTEXT         "Face &Name"       -1,            4, 154,  42,   8
+     EDITTEXT                         IDD_FACE,     48, 152,  74,  14, AS
+     DEFPUSHBUTTON "&Ok"              IDD_OK,      126, 152,  60,  14, GT
+     GROUPBOX      "Text Metrics"     -1,          192,   2, 110, 164, GR
+     LTEXT         "Height:"          -1,          200,  14,  44,   8
+     LTEXT         "Ascent:"          -1,          200,  24,  44,   8
+     LTEXT         "Descent:"         -1,          200,  34,  46,   8
+     LTEXT         "Int Lead:"        -1,          200,  44,  44,   8
+     LTEXT         "Ext Lead:"        -1,          200,  54,  44,   8
+     LTEXT         "Ave Width:"       -1,          200,  64,  44,   8
+     LTEXT         "Max Width:"       -1,          200,  74,  44,   8
+     LTEXT         "Weight:"          -1,          200,  84,  44,   8
+     LTEXT         "Pitch:"           -1,          200,  94,  44,   8
+     LTEXT         "Family:"          -1,          200, 104,  42,   8
+     LTEXT         "Char Set:"        -1,          200, 114,  44,   8
+     LTEXT         "Overhang:"        -1,          200, 124,  44,   8
+     LTEXT         "X Aspect:"        -1,          200, 134,  44,   8
+     LTEXT         "Y Aspect:"        -1,          200, 144,  44,   8
+     LTEXT         "Face Name:"       -1,          200, 154,  44,   8
+     RTEXT         "0"                TM_HEIGHT,   250,  14,  44,   8
+     RTEXT         "0"                TM_ASCENT,   250,  24,  44,   8
+     RTEXT         "0"                TM_DESCENT,  250,  34,  44,   8
+     RTEXT         "0"                TM_EXTLEAD,  250,  54,  44,   8
+     RTEXT         "0"                TM_INTLEAD,  250,  44,  44,   8
+     RTEXT         "0"                TM_AVEWIDTH, 250,  64,  44,   8
+     RTEXT         "0"                TM_MAXWIDTH, 250,  74,  44,   8
+     RTEXT         "0"                TM_WEIGHT,   250,  84,  44,   8
+     RTEXT         ""                 TM_PITCH,    250,  94,  44,   8
+     RTEXT         ""                 TM_FAMILY,   250, 104,  44,   8
+     RTEXT         ""                 TM_CHARSET,  250, 114,  44,   8
+     RTEXT         "0"                TM_OVER,     250, 124,  44,   8
+     RTEXT         "0"                TM_DIGX,     250, 134,  44,   8
+     RTEXT         "0"                TM_DIGY,     250, 144,  44,   8
+     RTEXT         ""                 TF_NAME,     250, 154,  44,   8
+     }

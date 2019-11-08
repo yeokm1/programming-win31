@@ -1,0 +1,26 @@
+/*---------------------------
+   ABOUT1.RC resource script
+  ---------------------------*/
+
+#include <windows.h>
+#include "about1.h"
+
+About1 ICON about1.ico
+
+About1 MENU
+     {
+     POPUP "&Help"
+          {
+          MENUITEM "&About About1...",       IDM_ABOUT
+          }
+     }
+
+AboutBox DIALOG  20, 20, 160, 80
+     STYLE WS_POPUP | WS_DLGFRAME
+     {
+     CTEXT "About1"                      -1,   0, 12, 160,  8
+     ICON  "About1"                      -1,   8,  8,   0,  0
+     CTEXT "About Box Demo Program"      -1,   0, 36, 160,  8
+     CTEXT "(c) Charles Petzold, 1992"   -1,   0, 48, 160,  8
+     DEFPUSHBUTTON "OK"                IDOK,  64, 60,  32, 14, WS_GROUP
+     } 

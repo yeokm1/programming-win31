@@ -1,0 +1,18 @@
+/*----------------------------
+   SHOWDIB.RC resource script
+  ----------------------------*/
+
+#include "showdib.h"
+
+ShowDib MENU
+     {
+     POPUP "&File"
+          {
+          MENUITEM "&Open...",               IDM_OPEN
+          }
+     POPUP "&Display"
+          {
+          MENUITEM "&Actual Size",           IDM_ACTUAL, CHECKED
+          MENUITEM "&Stretch to Window",     IDM_STRETCH
+          }
+     }

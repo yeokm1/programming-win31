@@ -1,0 +1,13 @@
+;------------------------------------
+; COLORS2.DEF module definition file
+;------------------------------------
+
+NAME           COLORS2
+
+DESCRIPTION    'Color Scroll with Dialog Box (c) Charles Petzold, 1992'
+EXETYPE        WINDOWS
+STUB           'WINSTUB.EXE'
+CODE           PRELOAD MOVEABLE DISCARDABLE
+DATA           PRELOAD MOVEABLE MULTIPLE
+HEAPSIZE       1024
+STACKSIZE      8192

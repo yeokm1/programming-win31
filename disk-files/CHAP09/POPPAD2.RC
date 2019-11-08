@@ -1,0 +1,53 @@
+/*----------------------------
+   POPPAD2.RC resource script
+  ----------------------------*/
+
+#include <windows.h>
+#include "poppad2.h"
+
+PopPad2 ICON poppad2.ico
+
+PopPad2 MENU
+     {
+     POPUP "&File"
+          {
+          MENUITEM "&New",              IDM_NEW
+          MENUITEM "&Open...",          IDM_OPEN
+          MENUITEM "&Save",             IDM_SAVE
+          MENUITEM "Save &As...",       IDM_SAVEAS
+          MENUITEM SEPARATOR
+          MENUITEM "&Print",            IDM_PRINT
+          MENUITEM SEPARATOR
+          MENUITEM "E&xit",             IDM_EXIT
+          }
+     POPUP "&Edit"
+          {
+          MENUITEM "&Undo\tCtrl+Z",     IDM_UNDO
+          MENUITEM SEPARATOR
+          MENUITEM "Cu&t\tCtrl+X",      IDM_CUT
+          MENUITEM "&Copy\tCtrl+C",     IDM_COPY
+          MENUITEM "&Paste\tCtrl+V",    IDM_PASTE
+          MENUITEM "De&lete\tDel",      IDM_DEL
+          MENUITEM SEPARATOR
+          MENUITEM "&Select All",       IDM_SELALL
+          }
+     POPUP "&Help"
+          {
+          MENUITEM "&Help...",          IDM_HELP
+          MENUITEM "&About PopPad2...", IDM_ABOUT
+          }
+     }
+
+PopPad2 ACCELERATORS
+     {
+     "^Z",      IDM_UNDO
+     VK_BACK,   IDM_UNDO,  VIRTKEY, ALT
+     "^X",      IDM_CUT
+     VK_DELETE, IDM_CUT,   VIRTKEY, SHIFT
+     "^C",      IDM_COPY
+     VK_INSERT, IDM_COPY,  VIRTKEY, CONTROL
+     "^V",      IDM_PASTE
+     VK_INSERT, IDM_PASTE, VIRTKEY, SHIFT
+     VK_DELETE, IDM_DEL,   VIRTKEY
+     VK_F1,     IDM_HELP,  VIRTKEY
+     }

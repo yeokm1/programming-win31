@@ -1,0 +1,7 @@
+/*-----------------------------
+   RESOURC2.RC resource script
+  -----------------------------*/
+
+resourc2  ICON    resourc2.ico
+resourc2  CURSOR  resourc2.cur
+resourc2  BITMAP  resourc2.bmp
