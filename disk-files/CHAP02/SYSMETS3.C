@@ -82,6 +82,9 @@ long FAR PASCAL _export WndProc (HWND hwnd, UINT message, UINT wParam,
                cxClient = LOWORD (lParam) ;
                cyClient = HIWORD (lParam) ;
 
+               nVscrollMax = max (0, NUMLINES + 2 - cyClient / cyChar) ;
+               nVscrollPos = min (nVscrollPos, nVscrollMax) ;
+
                SetScrollRange (hwnd, SB_VERT, 0, nVscrollMax, FALSE) ;
                SetScrollPos   (hwnd, SB_VERT, nVscrollPos, TRUE) ;
 
